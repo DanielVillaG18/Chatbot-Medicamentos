@@ -21,12 +21,10 @@ Este proyecto es un chatbot construido con **Flask** y un modelo de **árbol de 
 1. Clona este repositorio.
 2. Instala las dependencias:
 
-```bash
-pip install -r requirements.txt```
+pip install -r requirements.txt
 
 3. Ejecuta el servidor:
-
-```bash
+   
 python app.py
 
 4. Abre tu navegador en: http://localhost:5000
