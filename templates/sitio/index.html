@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="stylesheet" href="css/styles.css" />
+ 
+     <!-- Bootstrap CSS v5.2.1 -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<style>
+
+    body{  
+
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    
+    } 
+
+    .container{
+
+        justify-content: center;
+        width: 500px;
+
+    }
+
+    .container2{
+
+        width: 280px;
+        height: auto;  
+        border: 2px solid  rgb(20, 20, 20);
+        border-radius: 32px;
+        padding-left: 50px;
+        padding-right: 30px;
+        padding-top: 20px;
+        background-color: #e3f2fd;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        
+        
+        
+        
+        
+    }
+    h1{
+        align-items: center;
+        align-content: center;
+    }
+
+</style>
+
+
+<body>
+   <section>              
+            <div class="container2 justify-content-center">  
+                <h1>Chatbot</h1>
+                <br>
+                    <p>{{ pregunta }}</p>
+                    <br>
+                <form action="/respuesta" method="post">
+                    <input type="text" name="respuesta" autocomplete="off">
+                    <br>
+                    <br>
+                    <input type="submit" value="Enviar">
+                    <br>
+                    <br>
+                </form>
+                
+            </div>       
+    </section>
+
+    
+</body>
+</html>
+

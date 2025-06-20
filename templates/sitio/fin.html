@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+</head>
+
+<style>
+
+    body{  
+
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    
+    } 
+
+    .container{
+
+        justify-content: center;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container2{
+
+        width: 200px;
+        height: auto;  
+        border: 2px solid  rgb(20, 20, 20);
+        border-radius: 32px;
+        padding-left: 50px;
+        padding-right: 30px;
+        padding-top: 20px;
+        background-color: #e3f2fd;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;        
+        
+    }
+    h1{
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .li{
+        font-size: 10px;
+    }
+
+</style>
+
+<body>
+
+<div class="container2 justify-content-center"> 
+    <h1>¡Gracias!</h1>
+    <p>Tu medicamento a tomar es:</p>
+    <ul>
+      {% for respuesta in respuestas %}
+       <li>{{ respuesta }} </li> 
+       
+      {% endfor %}    
+    </ul>
+    
+    
+</div> 
+</body>
+</html>
