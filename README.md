@@ -22,7 +22,7 @@ Este proyecto es un chatbot construido con **Flask** y un modelo de **árbol de 
 2. Instala las dependencias:
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt```
 
 3. Ejecuta el servidor:
 
